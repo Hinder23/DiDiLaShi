@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DiDiLaShi</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="phone_number">手机号</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="captcha">验证码</string>
+    <string name="get_captcha">获取验证码</string>
+    <string name="sign_up">注册</string>
+    <string name="login">登录</string>
+    <string name="tologin">已有账号？点此登录</string>
+    <string name="tosignup">立即注册</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="thrid_way_login">——你还可以用以下方式登录——</string>
+    <string name="wechat">微信</string>
+    <string name="qq">qq</string>
+    <string name="weibo">微博</string>
+</resources>

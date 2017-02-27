@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar" />
+        <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="56dp"
+           android:paddingLeft="24dp"
+           android:paddingRight="24dp">
+
+           <ImageView android:src="@drawable/logo"
+               android:layout_width="wrap_content"
+               android:layout_height="72dp"
+               android:layout_marginBottom="24dp"
+               android:layout_gravity="center_horizontal" />
+
+           <!--  Phone Label -->
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/phoneWrapper"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_marginBottom="8dp">
+               <EditText android:id="@+id/input_phone"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:inputType="number"
+                   android:hint="@string/phone_number" />
+           </android.support.design.widget.TextInputLayout>
+
+            <!--  username Lable -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint="@string/username" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+           <!-- Password Label -->
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/passwordWrapper"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_marginBottom="8dp">
+               <EditText android:id="@+id/input_password"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textPassword"
+                   android:hint="@string/password"/>
+           </android.support.design.widget.TextInputLayout>
+
+           <!-- 验证码 Label -->
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="fill_parent"
+           android:layout_gravity="center_horizontal"
+           android:layout_height="wrap_content">
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/captchaWrapper"
+               android:layout_width="250dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_marginBottom="8dp"
+               android:layout_gravity="center">
+               <EditText android:id="@+id/input_captcha"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="number"
+                   android:hint="@string/captcha"/>
+           </android.support.design.widget.TextInputLayout>
+           <com.android.didilashi.CustomView.CountDownButton
+               android:id="@+id/sendCode"
+               android:layout_width="120dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_marginBottom="8dp"
+               android:layout_gravity="center_vertical"
+               android:textColor="@color/text"
+               android:background="@color/colorPrimary"
+               />
+
+       </LinearLayout>
+           <!-- Signup Button -->
+           <android.support.v7.widget.AppCompatButton
+               android:id="@+id/btn_sign"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="24dp"
+               android:layout_marginBottom="24dp"
+               android:padding="12dp"
+               android:text="@string/sign_up"
+               android:textColor="@color/text"
+               android:background="@color/colorPrimary"
+               android:enabled="true"/>
+
+           <TextView
+               android:id="@+id/link_login"
+               android:clickable="true"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="24dp"
+               android:text="@string/tologin"
+               android:gravity="center"
+               android:textColor="@color/colorPrimary"
+               android:textSize="16dip"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
